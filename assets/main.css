@@ -1,7 +1,30 @@
-@import 'vue-snotify/styles';
-/*@import 'vue-snotify/styles/material.css';*/
-.teste{
-    background-color: #ff4500;
-    height: 100px;
-    width: 100px;
+/*@import '~tailwindcss/base.css';*/
+/*@import '~tailwindcss/components.css';*/
+/*@import '~tailwindcss/utilities.css';*/
+
+.btn-default {
+    @apply py-2 px-4 bg-transparent text-gray-600 font-semibold rounded-lg shadow-md hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-gray-800 focus:ring-opacity-75;
+}
+.btn-primary {
+    @apply py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+}
+.btn-secondary {
+    @apply py-2 px-4 bg-indigo-700 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-900 focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-opacity-75;
+}
+.btn-warning {
+    @apply py-2 px-4 bg-yellow-500 text-white font-semibold rounded-lg shadow-md hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-opacity-75;
+}
+.btn-danger {
+    @apply py-2 px-4 bg-red-500 text-white font-semibold rounded-lg shadow-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-400 focus:ring-opacity-75;
+}
+.btn-success {
+    @apply py-2 px-4 bg-green-500 text-white font-semibold rounded-lg shadow-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-opacity-75;
+}
+.input-text {
+    @apply py-2 px-1 w-full rounded-md shadow-md border border-indigo-200 focus:border-indigo-500 hover:border-indigo-700 focus:ring-0 outline-none;
+}
+
+/*TITLE*/
+h1 {
+    @apply text-2xl text-indigo-500 font-bold
 }

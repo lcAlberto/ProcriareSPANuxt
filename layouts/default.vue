@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bg-gray-300 w-full" style="height: 100vh">
     <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800">
       <div class="container flex flex-wrap justify-between items-center mx-auto">
         <a
@@ -139,9 +139,32 @@
             </li>
           </ul>
         </div>
+        <button id="dropdownDefault" data-dropdown-toggle="dropdown" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Dropdown button <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+        <!-- Dropdown menu -->
+        <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700">
+          <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefault">
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign out</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
-    <nuxt/>
+    <div class="container mx-auto mt-6 rounded-md px-4 py-5 bg-gray-100" style="height: 80vh">
+      <nuxt/>
+    </div>
+    <footer class="bg-indigo-500 mt-5 h-40 p-5 flex items-start justify-center">
+      © Lucas Alberto Matoso
+    </footer>
   </div>
 </template>
 
