@@ -1,0 +1,7 @@
+@import 'vue-snotify/styles';
+/*@import 'vue-snotify/styles/material.css';*/
+.teste{
+    background-color: #ff4500;
+    height: 100px;
+    width: 100px;
+}
