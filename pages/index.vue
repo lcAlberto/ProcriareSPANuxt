@@ -73,9 +73,37 @@
 export default {
   name: 'IndexPage',
   layout: 'default',
+  data () {
+    return {
+      dialogVisible: false
+    }
+  },
   methods: {
     toast () {
       this.$snotify.success('Example body content')
+    },
+    open () {
+      this.$message('This is a message.')
+    },
+
+    openVn () {
+      console.log('oio')
+      // const h = this.$createElement
+      // this.$message({
+      //   message: h('p', null, [
+      //     h('span', null, 'Message can be '),
+      //     h('i', { style: 'color: teal' }, 'VNode')
+      //   ])
+      // })
+    },
+    handleClose (done) {
+      console.log(done)
+      //   this.$confirm('Are you sure to close this dialog?')
+      //     .then(() => {
+      //       done()
+      //     })
+      //     .catch(() => {
+      //     })
     }
   }
 }
