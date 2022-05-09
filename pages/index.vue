@@ -1,5 +1,7 @@
 <template>
   <div class="flex flex-col">
+    <i class="mdi mdi-account-circle"></i>
+    <i class="mdi mdi-car-side"></i>
     <vue-snotify />
   </div>
 </template>

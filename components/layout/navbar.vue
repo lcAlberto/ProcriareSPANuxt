@@ -1,10 +1,10 @@
 <template>
   <el-header class="flex flex-row items-center justify-between" style="text-align: right; font-size: 12px">
     <div class="flex">
-      <el-menu :default-active="1" class="el-menu-demo" mode="horizontal">
+      <el-menu default-active="1" class="el-menu-demo" mode="horizontal">
         <el-menu-item index="1">Logo</el-menu-item>
       </el-menu>
-      <el-menu :default-active="1" class="el-menu-demo" mode="horizontal">
+      <el-menu default-active="1" class="el-menu-demo" mode="horizontal">
         <el-menu-item index="1">Dashboard</el-menu-item>
       </el-menu>
     </div>

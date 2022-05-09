@@ -28,3 +28,7 @@
 h1 {
     @apply text-2xl text-indigo-500 font-bold
 }
+
+i {
+    @apply font-bold text-xl
+}
